@@ -1,0 +1,164 @@
+/* Desktop View */
+body {
+    margin: 0px;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.overall-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    margin-top: 80px;
+    margin-left: 85px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+
+}
+
+.content-header {
+    width: 300px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.content-sub-header {
+    width: 450px;
+    font-size: 10px;
+    color: #FFFFFF;
+    line-height: 20px;
+    
+}
+
+.hero-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.signup-header {
+    font-size: 7px;
+    background-color:hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form-input {
+    width: 300px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 35px;
+    /* text-align: center; */
+}
+
+.form-btn {
+    width: 304px;
+    margin-bottom: 20px;
+    margin-left: 14px;
+    /* border-bottom: 1px solid darkgreen; */
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    background-color: hsl(154, 59%, 51%);
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btnColorChange {
+    background-color: red;
+}
+
+.footer-text {
+    font-size: 8px;
+}
+
+span {
+    color: hsl(0, 100%, 74%);
+}
+
+.error-img {
+    visibility: hidden;
+    width: 18px;
+    position: relative;
+    right: 50px;
+    top: 4px;
+}
+
+.error-form-input {
+    border: 2px solid hsl(0, 100%, 74%);
+    margin-bottom: 15px;
+}
+
+.firstName-error-msg {
+    visibility: hidden;
+    margin: 0px;
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+    position: relative;
+    left: 163px;
+    bottom: 12px;
+}
+
+.lastName-error-msg {
+    visibility: hidden;
+    margin: 0px;
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+    position: relative;
+    left: 167px;
+    bottom: 12px;
+}
+
+.email-error-msg {
+    visibility: hidden;
+    margin: 0px;
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+    position: relative;
+    left: 155px;
+    bottom: 12px;
+}
+
+.pwd-error-msg {
+    visibility: hidden;
+    margin: 0px;
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+    position: relative;
+    left: 170px;
+    bottom: 12px;
+}
+

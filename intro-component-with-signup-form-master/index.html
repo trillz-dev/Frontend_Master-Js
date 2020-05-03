@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>Frontend Master | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <div class="overall-container">
+
+    <div class="hero-content">
+      <div class="hero-content-container">
+        <div class="content-header">
+          <h1>Learn to code by watching others</h1>
+        </div>
+        
+        <div class="content-sub-header">
+          <h2>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-signup">
+      <div class="signup-header">
+        <h1>Try it free 7 days then $20/mo. thereafter</h1>
+      </div>
+      
+      <div class="hero-signup-container">
+        <div class="signup-form">
+          <form class="form-container" id="my-form">
+            <div class="col-1">
+              <input type="text" name="" placeholder="First Name" class="form-input" id="firstName">
+              <img src="images/icon-error.svg" alt="" class="error-img">
+              <p class="firstName-error-msg"><i>First Name cannot be empty</i></p>
+              
+            </div>
+            <div class="col-2">
+              <input type="text" name="" placeholder="Last Name" class="form-input" id="lastName">
+              <img src="images/icon-error.svg" alt="" class="error-img">
+              <p class="lastName-error-msg"><i>Last Name cannot be empty</i></p>
+            </div>
+            
+            <div class="col-3">
+              <input type="email" name="" placeholder="Email Address" class="form-input" id="email">
+              <img src="images/icon-error.svg" alt="" class="error-img">
+              <p class="email-error-msg"><i>Looks like this is not an email</i></p>
+            </div>
+            <div class="col-4">
+              <input type="password" name="" placeholder="Password" class="form-input" id="password">
+              <img src="images/icon-error.svg" alt="" class="error-img">
+              <p class="pwd-error-msg"><i>Password cannot be empty</i></p>
+            </div>
+            <div class="col-5">
+              <button class="form-btn" id="btn">Claim your free trial</button>
+            </div>
+          </form>
+        </div>
+  
+        <div class="signup-footer">
+          <p class="footer-text">By clicking the button, you are agreeing to our <span>Terms and Services</span> </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
