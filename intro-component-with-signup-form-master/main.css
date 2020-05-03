@@ -3,6 +3,7 @@ body {
     margin: 0px;
     background-image: url(images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
 }
 
 .overall-container {
@@ -21,21 +22,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 50px;
 
 }
 
 .content-header {
-    width: 300px;
+    width: 350px;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .content-sub-header {
-    width: 450px;
+    width: 490px;
     font-size: 10px;
     color: #FFFFFF;
     line-height: 20px;
+    font-weight: 400;
     
 }
 
@@ -95,6 +98,7 @@ body {
     color: #FFFFFF;
     font-size: 14px;
     text-transform: uppercase;
+    box-shadow: 0px 5px #38B57E;
 }
 
 
@@ -146,8 +150,9 @@ span {
         justify-content: center;
         align-items: center;
         width: 400px;
-        height: 500px;
-        margin-top: 150px;
+        height: 800px;
+        margin-top: 70px;
+        margin-bottom: 70px;
         margin-left: 20px;
     }
     
@@ -164,52 +169,36 @@ span {
     
     .content-header {
         width: 300px;
-        color: #FFFFFF;
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .content-sub-header {
         width: 300px;
         font-size: 10px;
+        font-weight: 200;
         color: #FFFFFF;
-        line-height: 20px;
+        line-height: 25px;
         
     }
     
     .hero-signup-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
         width: 300px;
-        border-radius: 10px;
-        box-sizing: content-box;
-        box-shadow: 0px 5px #DB6667;
     }
     
     .signup-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: 25px;
     }
     
     .signup-header {
-        font-size: 7px;
-        background-color:hsl(248, 32%, 49%);
-        margin-bottom: 20px;
-        border-radius: 5px;
-        text-align: center;
-        color: #FFFFFF;
-        height: 40px;
-        padding-top: 10px;
+        font-size: 5px;
+        height: 50px;
+        padding-top: 25px;
+        margin-top: 50px;
         box-shadow: 0px 5px #DB6667;
     }
     
     .form_input {
-        width: 200px;
+        width: 250px;
         margin: 15px;
         border: 1px solid lightgray;
         border-radius: 5px;
@@ -217,22 +206,18 @@ span {
     }
     
     .form-btn {
-        width: 204px;
+        width: 254px;
         margin: 15px;
-        border: none;
-        border-radius: 5px;
-        height: 35px;
-        background-color: hsl(154, 59%, 51%);
-        color: #FFFFFF;
-        font-size: 14px;
-        text-transform: uppercase;
     }
     
     
     .footer-text {
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
+        width: 220px;
+        text-align: center;
         margin-bottom: 20px;
+        line-height: 15px;
     }
 
 
