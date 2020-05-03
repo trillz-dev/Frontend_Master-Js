@@ -35,28 +35,27 @@
       <div class="hero-signup-container">
         <div class="signup-form">
           <form class="form-container" id="my-form">
+
             <div class="col-1">
-              <input type="text" name="" placeholder="First Name" class="form-input" id="firstName">
-              <img src="images/icon-error.svg" alt="" class="error-img">
-              <p class="firstName-error-msg"><i>First Name cannot be empty</i></p>
-              
+              <input type="text" name="" placeholder="First Name" class="form_input" id="firstName">
+              <p class="hidden error-msg" id="firstNameWarning">First Name cannot be empty</p>
             </div>
+
             <div class="col-2">
-              <input type="text" name="" placeholder="Last Name" class="form-input" id="lastName">
-              <img src="images/icon-error.svg" alt="" class="error-img">
-              <p class="lastName-error-msg"><i>Last Name cannot be empty</i></p>
+              <input type="text" name="" placeholder="Last Name" class="form_input" id="lastName">
+              <p class="hidden error-msg" id="lastNameWarning">Last Name cannot be empty</p>
             </div>
-            
+
             <div class="col-3">
-              <input type="email" name="" placeholder="Email Address" class="form-input" id="email">
-              <img src="images/icon-error.svg" alt="" class="error-img">
-              <p class="email-error-msg"><i>Looks like this is not an email</i></p>
+              <input type="email" name="" placeholder="Email Address" class="form_input" id="email">
+              <p class="hidden error-msg" id="emailWarning">Looks like this is not an email</p>
             </div>
+
             <div class="col-4">
-              <input type="password" name="" placeholder="Password" class="form-input" id="password">
-              <img src="images/icon-error.svg" alt="" class="error-img">
-              <p class="pwd-error-msg"><i>Password cannot be empty</i></p>
+              <input type="password" name="" placeholder="Password" class="form_input" id="password">
+              <p class="hidden error-msg" id="passwordWarning">Password cannot be empty</p>
             </div>
+
             <div class="col-5">
               <button class="form-btn" id="btn">Claim your free trial</button>
             </div>
@@ -75,6 +74,6 @@
 
 
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
