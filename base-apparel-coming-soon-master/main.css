@@ -45,7 +45,7 @@ body {
 .header {
     line-height: 20px;
     margin-right: 80px;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .header-1 {
@@ -79,13 +79,13 @@ body {
     color: hsl(0, 36%, 70%);
     font-weight: lighter;
     line-height: 23px;
-    margin-top: -5px;
+    margin-top: -10px;
     margin-left: 35px;
 }
 
-.main-email {
+.email-input {
     width: 340px;
-    height: 45px;
+    height: 44px;
     margin-right: 20px;
     border-radius: 30px;
     border: 1px solid rgb(214, 210, 225);
@@ -103,11 +103,11 @@ body {
 
 .btn {
     position: absolute;
-    top: 14.5px;
-    left: 310px;
+    top: 14px;
+    left: 312px;
     margin-right: 50px;
     width: 85px;
-    height: 50px;
+    height: 49.5px;
     border-radius: 47%;
     border: none;
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -116,5 +116,22 @@ body {
 
 .btn:active {
     /* background-image: Linear, (135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)); */
-    background-color: hsl(0, 6%, 24%);
+    background-color: hsl(0, 36%, 70%);
+}
+
+.error-input {
+    border: 1px solid hsl(0, 93%, 68%);
+    background-image: url(images/icon-error.svg);
+    background-position: 75% center;
+    background-repeat: no-repeat;
+}
+
+.error-msg {
+    font-size: 12px;
+    color: hsl(0, 93%, 68%);
+    margin-left: 45px;
+}
+
+.hidden {
+    display: none;
 }
