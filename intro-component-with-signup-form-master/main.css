@@ -88,6 +88,12 @@ body {
     height: 35px;
 }
 
+[type='text'], [type='email'], [type='password'] {
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 .form-btn {
     width: 354px;
     margin: 15px;
