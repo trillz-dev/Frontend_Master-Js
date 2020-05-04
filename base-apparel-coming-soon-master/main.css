@@ -115,7 +115,7 @@ body {
 }
 
 .btn:active {
-    /* background-image: Linear, (135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)); */
+    background-image: Linear, (135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
     background-color: hsl(0, 36%, 70%);
 }
 
@@ -134,4 +134,11 @@ body {
 
 .hidden {
     display: none;
+}
+
+
+/* Mobile View */
+
+@media screen and (max-width: 500px) {
+    
 }
