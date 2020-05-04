@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: "Josefin Sans";
     box-sizing: content-box;
+    background-image: url("images/bg-pattern-desktop.svg");
 }
 
 .container {
@@ -17,19 +18,11 @@ body {
 
 .main-content {
     width: 60%;
-    background-image: url("images/bg-pattern-desktop.svg");
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
     box-sizing: inherit;
-}
-
-.aside-image {
-    width: 40%;
-    height: 654px;
-    background-color: blue;
-    display: block;
 }
 
 .logo-img {
@@ -140,5 +133,97 @@ body {
 /* Mobile View */
 
 @media screen and (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
+    .main-content {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        box-sizing: inherit;
+        text-align: center;
+        margin-bottom: -250px;
+    }
+    
+    .logo-img {
+        margin-right: 200px;
+        margin-bottom: 250px;
+    }
+
+    .hero-img {
+        width: 435px;
+        height: 270px;
+        box-sizing: inherit;
+        position: absolute;
+        right: 0px;
+        bottom: 285px;
+    }
+
+    .header {
+        line-height: 20px;
+        margin-right: 80px;
+        margin-left: 100px;
+    }
+    
+    .header-1 {
+        font-size: 45px;
+    }
+    
+    .header-2 {
+        font-size: 45px;
+    }
+    
+    .header-3 {
+        font-size: 45px;
+    }
+    
+    .sub-header {
+        margin: 0px;
+    }
+    
+    .sub-1 {
+        font-size: 15px;
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper{
+        margin-bottom: 70px;
+    }
+    
+    .email-input {
+        width: 260px;
+    }
+
+    .btn {
+        position: absolute;
+        top: 14px;
+        left: 260px;
+        margin-right: 50px;
+        width: 65px;
+        height: 49.5px;
+        border-radius: 47%;
+        border: none;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    
+    }
+
+    .error-input {
+        background-position: 80% center;
+
+    }
+    
+    .error-msg {
+        margin-left: -97px;
+    }
+
+
+
 }
