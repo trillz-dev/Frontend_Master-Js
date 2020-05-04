@@ -81,7 +81,7 @@ body {
 }
 
 .form_input {
-    width: 350px;
+    width: 325px;
     margin: 15px;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -204,7 +204,7 @@ span {
     }
     
     .form_input {
-        width: 250px;
+        width: 225px;
         margin: 15px;
         border: 1px solid lightgray;
         border-radius: 5px;
