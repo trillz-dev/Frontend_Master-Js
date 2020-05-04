@@ -25,12 +25,13 @@ body {
     box-sizing: inherit;
 }
 
+
 .logo-img {
     margin-right: 200px;
 }
 
 .hero-img {
-    width: 100%;
+    width: 550px;
     height: 100vh;
     box-sizing: inherit;
 }
