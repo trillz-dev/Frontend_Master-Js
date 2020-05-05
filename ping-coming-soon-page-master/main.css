@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .hero-container {
@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-
+    width: 55px;
 }
 
 .hero-header {
@@ -27,20 +27,59 @@ body {
     justify-content: center;
     align-items: center; */
     text-align: center;
-    margin-top: 20px;
+    margin-top: -15px;
 }
 
 .hero-img {
-    width: 500px;
+    width: 470px;
+    height: 270px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .title {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 38px;
+    font-weight: 400;
     color: hsl(0, 0%, 59%);
 }
 
+span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 600;
+}
+
 .text {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    /* font-weight: 300; */
+    color: hsl(209, 33%, 12%);
+    margin-top: -25px;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 485px;
+    margin-top: 30px;
+}
+
+.email-input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+    border-radius: 50px;
+}
+
+[type = 'email'] {
+    padding-left: 20px;
 }
