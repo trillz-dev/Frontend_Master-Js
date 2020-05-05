@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.hero-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+
+}
+
+.hero-header {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-img {
+    width: 500px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 300;
+}
