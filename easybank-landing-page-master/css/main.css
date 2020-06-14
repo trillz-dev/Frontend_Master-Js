@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: #FFFFFF;
+
+}
+
+.navbar {
+    width: 1130px;
+    height: 70px;
+}
+
+.navbar-nav {
+    margin-left: -100px;
+}
+
+
+.sign-in-btn {
+    width: 150px;
+    background-color: hsl(136, 65%, 51%);
+    border-radius: 50px;
+    background: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+/* Main */
+
+main {
+    background-color: #FAFAFA;
+    height: 500px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.hero-text {
+    width: 550px;
+    padding-top: 50px;
+    /* padding-left: 15px; */
+}
+
+.hero-title {
+    width: 400px;
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 15px;
+    line-height: 2px;
+}
+
+.hero-caption {
+    width: 410px;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+.hero-image {
+    width: 550px;
+}
+
+.hero-img-1 {
+    width: 560px;
+    position: relative;
+    top: -50px;
+    left: 100px;
+}
+
+.hero-img-2 {
+    width: 500px;
+    position: relative;
+    bottom: 550px;
+    left: 100px;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 445px;
+}
+
+.hero-email {
+    width: 280px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid hsl(136, 65%, 51%);
+}
+
+[type = 'email'] {
+    padding-left: 15px;
+}
+
+.hero-btn {
+    width: 150px;
+    background-color: hsl(136, 65%, 51%);
+    border-radius: 50px;
+    background: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
