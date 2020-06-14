@@ -71,6 +71,7 @@ main {
     width: 410px;
     padding-bottom: 25px;
     line-height: 25px;
+    color: #4A4A4A;
 }
 
 .hero-image {
@@ -153,7 +154,7 @@ main {
 .header-caption {
     font-size: 17px;
     font-weight: 400;
-    color: gray;
+    color: #4A4A4A;
     width: 600px;
 }
 
@@ -170,7 +171,7 @@ main {
 .card-caption {
     font-size: 14px;
     width: 230px;
-    color: gray;
+    color: #4A4A4A;
 }
 
 /* No fee Section */
@@ -203,7 +204,7 @@ main {
     width: 530px;
     line-height: 25px;
     letter-spacing: 0.2px;
-    color: gray;
+    color: #4A4A4A;
 }
 
 .fee-img {
@@ -214,7 +215,7 @@ main {
 .alert-section {
     display: flex;
     justify-content: center;
-    background-color: #F4F5F7;
+    background-color: #FAFAFA;
 }
 
 .alert-container {
@@ -241,9 +242,52 @@ main {
     width: 530px;
     line-height: 25px;
     letter-spacing: 0.2px;
-    color: gray;
+    color: #4A4A4A;
 }
 
 .alert-img {
     width: 450px;
+}
+
+.security-section {
+    height: 500px;
+    background-color: #F4F5F7;
+}
+
+.security-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.security-header {
+    /* width: 400px; */
+    padding-bottom: 50px;
+}
+
+.security-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+}
+
+.lock-img {
+    width: 200px;
+}
+
+.security-sub {
+    width: 500px;
+}
+
+.sub-title {
+    font-weight: 400;
+}
+
+.sub-caption {
+    font-size: 16px;
+    color: #4A4A4A;
 }
