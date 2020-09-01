@@ -3,35 +3,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header */
-
-header {
-    background-color: #FFFFFF;
-
-}
-
-.navbar {
-    width: 1130px;
-    height: 70px;
-}
-
-.navbar-nav {
-    margin-left: -100px;
+.text-color{
+    color: hsl(233, 26%, 24%) !important;
 }
 
 
-.sign-in-btn {
-    width: 150px;
-    background-color: hsl(136, 65%, 51%);
-    border-radius: 50px;
-    background: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-}
+
 
 /* Main */
 
-main {
-    
-}
+
 
 /* Hero Section */
 
@@ -40,10 +21,8 @@ main {
     flex-direction: row;
     justify-content: center;
     padding-top: 100px;
-    height: 550px;
-    /* width: 100%; */
+    height: 630px;
     width: 1349px;
-    /* background-color: red; */
     background-color: #FAFAFA;
 }
 
@@ -55,46 +34,45 @@ main {
 }
 
 .hero-text {
-    width: 550px;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .hero-title {
     width: 400px;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 56px;
     padding-bottom: 15px;
-    line-height: 2px;
+    line-height: 60px;
+    margin-bottom: 5px;
 }
 
 .hero-caption {
     width: 410px;
-    padding-bottom: 25px;
-    line-height: 25px;
+    padding-bottom: 28px;
+    line-height: 26px;
     color: #4A4A4A;
+    margin-bottom: 10px;
 }
 
 .hero-image {
     width: 550px;
-    /* position: relative;
-    top: -50px;
-    left: 400px; */
+    position: relative;
+    top: -100px;
+    left: -50px;
 }
 
 .hero-img-1 {
-    /* width: 560px; */
-    width: 100%;
+    width: 900px;
     position: relative;
     top: -50px;
-    left: 100px;
+    left: 50px;
 }
 
 .hero-img-2 {
-    /* width: 500px; */
-    width: 100%;
+    width: 1560px;
     position: relative;
-    bottom: 550px;
-    left: 100px;
+    bottom: 720px;
+    left: 250px;
 }
 
 .hero-form {
@@ -107,7 +85,7 @@ main {
 
 .hero-email {
     width: 280px;
-    height: 35px;
+    height: 45px;
     border-radius: 5px;
     border: 1px solid hsl(136, 65%, 51%);
 }
@@ -117,10 +95,23 @@ main {
 }
 
 .hero-btn {
-    width: 150px;
-    background-color: hsl(136, 65%, 51%);
-    border-radius: 50px;
-    background: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: hsl(233, 26%, 24%);
+    background: hsl(136, 65%, 51%);
+    background: linear-gradient(hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+    border: 1px solid hsl(192, 70%, 51%);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 160px;
+    height: 45px;
+}
+
+.hero-btn-icon {
+    margin-left: 10px;
+    margin-bottom: -3px;
 }
 
 /* Why Section */
@@ -290,4 +281,73 @@ main {
 .sub-caption {
     font-size: 16px;
     color: #4A4A4A;
+}
+
+/* Article Section */
+
+
+/* FAQs */
+
+.faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+}
+
+.question-section {
+    width: 350px;
+}
+
+.faq-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 56px;
+    color: #2D3136;
+}
+
+.faq-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #818992;
+}
+
+.question-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2D3136;
+    text-decoration: none;
+}
+
+.more-questions {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2D3136;
+}
+
+.faq-image {
+    width: 500px;
+}
+
+/* Footer */
+
+footer {
+    background-color: hsl(233, 26%, 24%);
 }

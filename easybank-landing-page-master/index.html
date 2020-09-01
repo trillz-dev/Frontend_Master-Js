@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">  
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Icon Font Awesome -->
+  <script src="https://kit.fontawesome.com/371f85bd51.js" crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
   <!-- Main Css -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 
 
   <title>Frontend Mentor | Easybank landing page</title>
@@ -18,7 +21,45 @@
 </head>
 <body>
 
-  <header class="d-flex justify-content-center fixed-top">
+
+  <div class="main-wrapper layout-strong">
+    <!-- Header -->
+    <header
+        class="navigation navigation__transparent navigation__caps navigation__separate navigation__right navigation__btn-fill">
+        <div class="container-full">
+            <div class="row">
+                <div class="col-12">
+                    <div class="navigation-content">
+                        <a href="#" class="navigation__brand">
+                          <div class="nav-logo img-fluid"><img src="/assets/images/logo.svg" alt="brand logo"></div>
+                        </a>
+                        <button class="navigation__toggler"></button>
+                        <nav class="navigation-wrapper">
+                            <button class="offcanvas__close">✕</button>
+                            <ul class="navigation-menu" id="nav">
+                                <li class="navigation-menu__item">
+                                    <a class="navigation-menu__link text-color" href="./">Online Banking</a>
+                                </li>
+                                <li class="navigation-menu__item">
+                                    <a class="navigation-menu__link text-color" href="/">Products</a>
+                                </li>
+                                <li class="navigation-menu__item">
+                                    <a class="navigation-menu__link text-color" href="/about.html">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="navigation-button navigation-button-couple">
+                            <a href="/sign-in.html" class="nav-cta-btn navigation-button-couple__trans text-color">Login</a>
+                            <a href="/sign-up.html" class="db-btn nav-cta-btn navigation-button-couple__fill text-color">Signup</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <!-- <header class="d-flex justify-content-center fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div>
         <a class="navbar-brand" href="#">
@@ -49,31 +90,36 @@
       </div>
     </nav>
     
-  </header>
+  </header> -->
 
   <main>
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-container row">
         <div class="hero-text col-lg-6 col-sm-12">
-          <div class="hero-title">
-            <h1>Next generation digital banking</h1>
+          <div>
+            <h1 class="hero-title">Next generation digital banking</h1>
           </div>
-          <div class="hero-caption">
-            <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
+          <div>
+            <p class="hero-caption">Take your financial life online. Your Easybank account will be a one-stop-shop 
               for spending, saving, budgeting, investing, and much more.</p>
           </div>
 
           <form action="" method="GET" class="hero-form">
             <input type="email" name="" id="email" placeholder="Enter E-mail" class="hero-email">
-            <button type="submit" class="hero-btn btn">Get Started</button>
+            <div class="hero-button">
+              <button type="submit" class="hero-btn btn">Get Started <span class="hero-btn-icon"><svg width="1em" height="1em" viewBox="0 0 16 16"     class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+              </svg></span></button>
+            </div>
           </form>
   
         </div>
   
         <div class="hero-image col-lg-6 col-sm-12">
-          <img class="img-fluid hero-img-1" src="images/bg-intro-desktop.svg" alt="">
-          <img class="img-fluid hero-img-2" src="images/image-mockups.png" alt="">
+          <img class="hero-img-1" src="/assets/images/bg-intro-desktop.svg" alt="">
+          <img class="img-fluid hero-img-2" src="/assets/images/image-mockups.png" alt="">
         </div>
       </div>
     </section>
@@ -95,7 +141,7 @@
         <div class="card-section row">
           <div class="card-1 col-lg-3 col-12-sm">
             <div class="card-image">
-              <img class="img-fluid card-img" src="images/icon-online.svg" alt="">
+              <img class="img-fluid card-img" src="/assets/images/icon-online.svg" alt="">
             </div>
             <div class="card-title">
               <h4>Online Banking</h4>
@@ -108,7 +154,7 @@
 
           <div class="card-2 col-lg-3 col-12-sm">
             <div class="card-image">
-              <img class="img-fluid card-img" src="images/icon-budgeting.svg" alt="">
+              <img class="img-fluid card-img" src="/assets/images/icon-budgeting.svg" alt="">
             </div>
             <div class="card-title">
               <h4>Simple Budgeting</h4>
@@ -121,7 +167,7 @@
 
           <div class="card-3 col-lg-3 col-12-sm">
             <div class="card-image">
-              <img class="img-fluid card-img" src="images/icon-onboarding.svg" alt="">
+              <img class="img-fluid card-img" src="/assets/images/icon-onboarding.svg" alt="">
             </div>
             <div class="card-title">
               <h4>Fast Onboarding</h4>
@@ -134,7 +180,7 @@
 
           <div class="card-4 col-lg-3 col-12-sm">
             <div class="card-image">
-              <img class="img-fluid card-img" src="images/icon-api.svg" alt="">
+              <img class="img-fluid card-img" src="/assets/images/icon-api.svg" alt="">
             </div>
             <div class="card-title">
               <h4>Open API</h4>
@@ -161,7 +207,7 @@
           </div>
 
             <div class="fee-image">
-              <img class="img-fluid fee-img" src="images/no-fees.png" alt="">
+              <img class="img-fluid fee-img" src="/assets/images/no-fees.png" alt="">
             </div>
       </div>
     </section>
@@ -179,7 +225,7 @@
         </div>
 
         <div class="alert-image">
-          <img class="img-fluid alert-img" src="images/alerts.png" alt="">
+          <img class="img-fluid alert-img" src="/assets/images/alerts.png" alt="">
         </div>
       </div>
     </section>
@@ -193,7 +239,7 @@
 
         <div class="security-body">
           <div class="security-image">
-            <img class="img-fluid lock-img" src="images/lock.png" alt="">
+            <img class="img-fluid lock-img" src="/assets/images/lock.png" alt="">
           </div>
           <div class="security-text">
             <div class="security-sub">
@@ -226,85 +272,203 @@
     </section>
 
     <!-- Latest Article -->
-    <section class="article-section">
+    <!-- <section class="article-section">
       <div class="article-container">
+        <div class="article-header">
+          <h1>Latest Articles</h1>
+        </div>
         <div class="card">
-          <img class="card-img-top" src="" alt="">
+          <img class="card-img-top img-fluid" src="images/image-currency.jpg" alt="">
           <div class="card-body">
-            <h5 class="card-title">Title</h5>
-            <p class="card-text">Content</p>
+            <p class="Card-name">By Claire Robinson</p>
+            <h5 class="card-title">Receive money in any currency with no fees</h5>
+            <p class="card-text">The world is getting smaller and we’re becoming more mobile. So why should you be 
+              forced to only receive money in a single …</p>
           </div>
         </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/image-restaurant.jpg" alt="">
+          <div class="card-body">
+            <p class="Card-name">By Wilson Hutton</p>
+            <h5 class="card-title">Treat yourself without worrying about money</h5>
+            <p class="card-text">Our simple budgeting feature allows you to separate out your spending and set 
+              realistic limits each month. That means you …</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/image-plane.jpg" alt="">
+          <div class="card-body">
+            <p class="Card-name">By Wilson Hutton</p>
+            <h5 class="card-title">Take your Easybank card wherever you go</h5>
+            <p class="card-text">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+              while you’re abroad. We’ll even show you …</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/image-confetti.jpg" alt="">
+          <div class="card-body">
+            <p class="Card-name">By Claire Robinson</p>
+            <h5 class="card-title">Our invite-only Beta accounts are now live!</h5>
+            <p class="card-text">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+              It’s easy to request an invite through the site ...</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- FAQs -->
+    <section class="faq">
+      <div class="faq-container row">
+          <div class="question-section col-lg-6">
+              <div class="faq-header">
+                  <div>
+                      <p class="faq-title">Frequently Asked Questions</p>
+                  </div>
+                  <div class="pb-4">
+                      <p class="faq-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ratione exercitationem laborum?</p>
+                  </div>
+              </div>
+              <div class="faq-questions">
+                  <div class="question-1">
+                      <p>
+                          <span class="question-icon"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                            </svg>
+                          </span>
+                          <a class="question-title" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">How secure is this platform?</a>
+                      </p>
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                          <div class="card card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="question-2">
+                      <p>
+                          <span class="question-icon"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                            </svg>
+                          </span>
+                          <a class="question-title" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Can I upgrade my plan anytime I want?</a>
+                      </p>
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                          <div class="card card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="question-3">
+                      <p>
+                          <span class="question-icon"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                            </svg>
+                          </span>
+                          <a class="question-title" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Where can I make Withdrawal from?</a>
+                      </p>
+                      <div class="collapse multi-collapse" id="multiCollapseExample3">
+                          <div class="card card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="question-4">
+                      <p>
+                          <span class="question-icon"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+                            </svg>
+                          </span>
+                          <a class="question-title" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Can I invite my friends?</a>
+                      </p>
+                      <div class="collapse multi-collapse" id="multiCollapseExample4">
+                          <div class="card card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                      </div>
+                  </div>
+                  <hr>
+
+                  <div class="more-questions">
+                      Still have a question? Reach out to us at: <a href="#">info@money-scheme.com</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="faq-image col-lg-6">
+              <img class="img-fluid faq-img" src="/assets/images/faq2.png" alt="">
+          </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
+    <div class="footer-container row">
+      <div class="col">
+        <div class="footer-image">
+          <img class="img-fluid" src="/Assets/images/logo.svg" alt="">
+        </div>
+        <div class="social-media">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+      </div>
 
+      <div class="col">
+        <div>About Us</div>
+        <div>Contact</div>
+        <div>Blog</div>
+      </div>
+
+      <div class="col">
+        <div>Careers</div>
+        <div>Support</div>
+        <div>Privacy Policy</div>
+      </div>
+
+      <div class="col">
+        <button class="btn">Request Invite</button>
+        <div>© Easybank. All Rights Reserved</div>
+      </div>
+    </div>
   </footer>
 
-
-
-  
-
-  
-
-  
-  
-
-  
- 
-
+  </div>
   
   
 
   
   
+  
+  
+  
+  
 
   
 
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set 
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...
+  
+  
+  
+  
+  
+  
 
   
 
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
+  
 
 
 
   <!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 </html>
